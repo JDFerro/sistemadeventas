@@ -57,6 +57,8 @@ return array(
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src/PhpOption'),
     'Phiki\\' => array($vendorDir . '/phiki/phiki/src'),
     'NunoMaduro\\Collision\\' => array($vendorDir . '/nunomaduro/collision/src'),
+    'Nnjeim\\World\\Database\\Seeders\\' => array($vendorDir . '/nnjeim/world/src/Database/Seeders'),
+    'Nnjeim\\World\\' => array($vendorDir . '/nnjeim/world/src'),
     'Nette\\' => array($vendorDir . '/nette/utils/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'Mockery\\' => array($vendorDir . '/mockery/mockery/library/Mockery'),
