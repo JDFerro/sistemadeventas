@@ -3,18 +3,31 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+<h1><b>Bienvenido {{ $empresa->nombre_empresa }}</b></h1>
+<hr>
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+
 @stop
 
 @section('css')
-    {{-- Add here extra stylesheets --}}
-    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
+{{-- Add here extra stylesheets --}}
+{{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
 @stop
 
 @section('js')
-    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
+@if(($mensaje = Session::get('mensaje')) && ($icono = Session::get('icono')))
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Swal.fire({
+            position: "top-end",
+            icon: "{{ $icono }}",
+            title: "{{ $mensaje }}",
+            showConfirmButton: false,
+            timer: 3000
+        });
+    });
+</script>
+@endif
 @stop
