@@ -55,4 +55,21 @@
 @section('adminlte_js')
     @stack('js')
     @yield('js')
+
+    
+@if(($mensaje = Session::get('mensaje')) && ($icono = Session::get('icono')))
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Swal.fire({
+            position: "top-end",
+            icon: "{{ $icono }}",
+            title: "{{ $mensaje }}",
+            showConfirmButton: false,
+            timer: 3000
+        });
+    });
+</script>
+@endif
 @stop
+
+
