@@ -128,6 +128,9 @@ class EmpresaController extends Controller
             $usuario->empresa_id = $empresa->id;
             $usuario->save();
 
+            $usuario->assignRole('ADMINISTRADOR'); // Asignar rol de administrador
+            
+
             Auth::login($usuario); // Iniciar sesión automáticamente
 
             \Log::info('Usuario creado exitosamente con ID: ' . $usuario->id);

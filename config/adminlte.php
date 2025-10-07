@@ -337,7 +337,7 @@ return [
             'icon' => 'fas fa-fw fa-user',
         ],*/
         [
-            'text' => 'Configuration',
+            'text' => 'Configuración',
             'url' => 'admin/configuracion',
             'icon' => 'fas fa-fw fa-gear',
         ],
@@ -351,7 +351,16 @@ return [
                 ],
             ],
         ],
-        
+        [
+            'text' => 'User',
+            'icon' => 'fas fa-fw fa-users',
+            'submenu' => [
+                [
+                    'text' => 'Listado de Usuarios',
+                    'url' => 'admin/usuarios',
+                ],
+            ],
+        ],
         /*['header' => 'labels'],
         [
             'text' => 'important',
