@@ -352,12 +352,22 @@ return [
             ],
         ],
         [
-            'text' => 'User',
+            'text' => 'Usuarios',
             'icon' => 'fas fa-fw fa-users',
             'submenu' => [
                 [
                     'text' => 'Listado de Usuarios',
                     'url' => 'admin/usuarios',
+                ],
+            ],
+        ],
+        [
+            'text' => 'Categorías',
+            'icon' => 'fas fa-fw fa-tags',
+            'submenu' => [
+                [
+                    'text' => 'Listado de Categorías',
+                    'url' => 'admin/categorias',
                 ],
             ],
         ],

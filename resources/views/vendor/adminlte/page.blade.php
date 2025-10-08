@@ -6,6 +6,18 @@
 @section('adminlte_css')
     @stack('css')
     @yield('css')
+    <style>
+    .zoomP {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        border: 1px solid #c0c0c0;
+        box-shadow: 0 5px 5px 0 rgba(192, 192, 192, 0.6);
+    }
+
+    .zoomP:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+</style>
 @stop
 
 @section('classes_body', $layoutHelper->makeBodyClasses())
