@@ -16,7 +16,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <table class="table table-striped table-bordered table-hover">
+                <table id="mitabla" class="table table-striped table-bordered table-hover">
                 <thead class="thead-dark">
                     <tr>
                     <th scope="col" style="text-align: center;">Nro</th>
@@ -83,5 +83,31 @@
 @stop
 
 @section('js')
+<script>
+    $('#mitabla').DataTable({
+            "pageLength": 5,
+            "language": {
+                "emptyTable": "No hay información",
+                "info": "Mostrando _START_ a _END_ de _TOTAL_ Usuarios",
+                "infoEmpty": "Mostrando 0 a 0 de 0 Usuarios",
+                "infoFiltered": "(Filtrado de _MAX_ total Usuarios)",
+                "infoPostFix": "",
+                "thousands": ",",
+                "lengthMenu": "Mostrar _MENU_ Usuarios",
+                "loadingRecords": "Cargando...",
+                "processing": "Procesando...",
+                "search": "Buscador:",
+                "zeroRecords": "Sin resultados encontrados",
+                "paginate": {
+                    "first": "Primero",
+                    "last": "Último",
+                    "next": "Siguiente",
+                    "previous": "Anterior"
+                
+            }
+        },
+    });
+
+</script>  
 
 @stop
