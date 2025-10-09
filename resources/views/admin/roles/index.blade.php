@@ -50,7 +50,7 @@
                                 text: "",
                                 icon: 'question',
                                 showCancelButton: true,
-                                confirmButtonColor: '#3085d6',
+                                confirmButtonColor: '#5a3a3aff',
                                 cancelButtonColor: '#d33',
                                 confirmButtonText: 'Sí, eliminar',
                                 cancelButtonText: 'Cancelar'
