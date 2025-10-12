@@ -381,6 +381,16 @@ return [
                 ],
             ],
         ],
+        [
+            'text' => 'Proveedores',
+            'icon' => 'fas fa-fw fa-list',
+            'submenu' => [
+                [
+                    'text' => 'Listado de Proveedores',
+                    'url' => 'admin/proveedores',
+                ],
+            ],
+        ],
         /*['header' => 'labels'],
         [
             'text' => 'important',
